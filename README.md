@@ -29,65 +29,65 @@ To launch the script in the background and make it work, some services need to b
 
   1) Default LED monitor mode:
 
-      sudo vim patan-ds4_default.service
+          sudo vim patan-ds4_default.service
         
-  <br />
+      <br />
       Paste this inside and save (Be sure to replace YOURUSERNAME with your actual username.): <br />
   
-      Description=
-      After=multi-user.target
-      
-      [Service]
-      ExecStart=/home/YOURUSERNAME/code/Bash/ds4.sh -d
-      
-      [Install]
-      WantedBy=multi-user.target
+          Description=
+          After=multi-user.target
+          
+          [Service]
+          ExecStart=/home/YOURUSERNAME/code/Bash/ds4.sh -d
+          
+          [Install]
+          WantedBy=multi-user.target
   
-  <br />
+      <br />
     
-      sudo systemctl patan-ds4_default.service
+          sudo systemctl patan-ds4_default.service
       
   2) Battery LED monitor mode:
 
-    sudo vim patan-ds4_battery.service
+          sudo vim patan-ds4_battery.service
+            
+        <br />
+          Paste this inside and save (Be sure to replace YOURUSERNAME with your actual username.): <br />
       
-  <br />
-    Paste this inside and save (Be sure to replace YOURUSERNAME with your actual username.): <br />
-
-    Description=
-    After=multi-user.target
-    
-    [Service]
-    ExecStart=/home/YOURUSERNAME/code/Bash/ds4.sh -b
-    
-    [Install]
-    WantedBy=multi-user.target
-
-
-  <br />
-  
-    sudo systemctl patan-ds4_battery.service
+          Description=
+          After=multi-user.target
+          
+          [Service]
+          ExecStart=/home/YOURUSERNAME/code/Bash/ds4.sh -b
+          
+          [Install]
+          WantedBy=multi-user.target
+      
+      
+        <br />
+        
+          sudo systemctl patan-ds4_battery.service
   
   3) Applications LED monitor mode:
 
-    sudo vim patan-ds4_launch.service
+          sudo vim patan-ds4_launch.service
+            
+        <br />
+          Paste this inside and save (Be sure to replace YOURUSERNAME with your actual username.): <br />
       
-  <br />
-    Paste this inside and save (Be sure to replace YOURUSERNAME with your actual username.): <br />
-
-    Description=
-    After=multi-user.target
-    
-    [Service]
-    ExecStart=/home/YOURUSERNAME/code/Bash/ds4.sh -l
-    
-    [Install]
-    WantedBy=multi-user.target
-
-
-  <br />
-  
-    sudo systemctl patan-ds4_launch.service
+          Description=
+          After=multi-user.target
+          
+          [Service]
+          ExecStart=/home/YOURUSERNAME/code/Bash/ds4.sh -l
+          
+          [Install]
+          WantedBy=multi-user.target
+      
+      
+        <br />
+        
+          sudo systemctl patan-ds4_launch.service
   
 ## Usage
 To launch the GUI you can run the script with -g argument. <br />
