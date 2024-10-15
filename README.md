@@ -38,6 +38,8 @@ To launch the script in the background and make it work, some services need to b
 
     cd /etc/systemd/system/
 
+  <br />
+
   1) Default LED monitor mode:
 
           sudo vim patan-ds4_default.service
