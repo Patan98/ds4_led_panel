@@ -17,5 +17,78 @@ In addition, there are two modes: <br />
 - Automatic application LED mode: <br />
   Changes the color of the LED dynamically based on some open applications. <br />
   The applications that trigger the change can be added, removed, or changed color by selecting "Manage automatic application LED settings" instead. <br />
+  For example, if you want to set the light to blue when you launch the PS2 emulator (PCSX2) and the light to red when you launch the PSX emulator (PCSXR), you just need to add both applications to the list and select their color. <br />
 
+Only one of these two modes can be running at a time. <br />
+If both are set to ON, they will both be disabled by the program. <br />
+
+## Install
+To launch the script in the background and make it work, some services need to be created:  <br />
+
+    cd /etc/systemd/system/
+
+  1) Default LED monitor mode:
+
+      sudo vim patan-ds4_default.service
+        
+  <br />
+      Paste this inside and save (Be sure to replace YOURUSERNAME with your actual username.): <br />
+  
+      Description=
+      After=multi-user.target
+      
+      [Service]
+      ExecStart=/home/YOURUSERNAME/code/Bash/ds4.sh -d
+      
+      [Install]
+      WantedBy=multi-user.target
+  
+  <br />
+    
+      sudo systemctl patan-ds4_default.service
+      
+  2) Battery LED monitor mode:
+
+    sudo vim patan-ds4_battery.service
+      
+  <br />
+    Paste this inside and save (Be sure to replace YOURUSERNAME with your actual username.): <br />
+
+    Description=
+    After=multi-user.target
+    
+    [Service]
+    ExecStart=/home/YOURUSERNAME/code/Bash/ds4.sh -b
+    
+    [Install]
+    WantedBy=multi-user.target
+
+
+  <br />
+  
+    sudo systemctl patan-ds4_battery.service
+  
+  3) Applications LED monitor mode:
+
+    sudo vim patan-ds4_launch.service
+      
+  <br />
+    Paste this inside and save (Be sure to replace YOURUSERNAME with your actual username.): <br />
+
+    Description=
+    After=multi-user.target
+    
+    [Service]
+    ExecStart=/home/YOURUSERNAME/code/Bash/ds4.sh -l
+    
+    [Install]
+    WantedBy=multi-user.target
+
+
+  <br />
+  
+    sudo systemctl patan-ds4_launch.service
+  
 ## Usage
+To launch the GUI you can run the script with -g argument. <br />
+
