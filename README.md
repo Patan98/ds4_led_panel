@@ -28,8 +28,8 @@ If both are set to ON, they will both be disabled by the program. <br />
 
 <div class="row" >
 <img height="300" width="300" alt="Selenium" src="https://github.com/user-attachments/assets/862858ec-2b92-487e-92dc-f00287182d68">
-<img height="300" width="300" alt="Telegram" src="https://github.com/user-attachments/assets/957e00c3-b2d7-4b83-9c6c-26ddb9d04d62">
-<img height="300" width="400" alt="Python" src="https://github.com/user-attachments/assets/f5287304-fc3c-4845-9ede-4ba15ec015d9">
+<img height="300" width="400" alt="Telegram" src="https://github.com/user-attachments/assets/957e00c3-b2d7-4b83-9c6c-26ddb9d04d62">
+<img height="300" width="600" alt="Python" src="https://github.com/user-attachments/assets/f5287304-fc3c-4845-9ede-4ba15ec015d9">
 </div>
 
 ## Install
