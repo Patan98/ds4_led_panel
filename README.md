@@ -103,3 +103,8 @@ To launch the script in the background and make it work, some services need to b
 ## Usage
 To launch the GUI you can run the script with -g argument. <br />
 
+<div class="row" >
+<img height="200" width="200" alt="Selenium" src="https://github.com/user-attachments/assets/862858ec-2b92-487e-92dc-f00287182d68">
+<img height="200" width="200" alt="Telegram" src="https://github.com/user-attachments/assets/957e00c3-b2d7-4b83-9c6c-26ddb9d04d62">
+<img height="200" width="400" alt="Python" src="https://github.com/user-attachments/assets/f5287304-fc3c-4845-9ede-4ba15ec015d9">
+</div>
