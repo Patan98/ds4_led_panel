@@ -1,1 +1,1 @@
-# ds4_led_controller
+# DS4 LED panel
