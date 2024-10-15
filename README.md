@@ -1,5 +1,7 @@
 # ds4_led_panel
 
+![tux](https://github.com/user-attachments/assets/9efed300-21ca-430f-80c6-d211c7a2535d)
+
 ## DS4 LED panel
 Simple bash script with zenity interface and csv text as "database" to manage ds4 controller LED. <br />
 Zenity is required for proper operation. <br />
