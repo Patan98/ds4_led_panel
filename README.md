@@ -1,7 +1,7 @@
 # ds4_led_panel
 
 <p align="center">
-  <img height="300" width="300" src="https://github.com/user-attachments/assets/9efed300-21ca-430f-80c6-d211c7a2535d">
+  <img height="400" width="400" src="https://github.com/user-attachments/assets/9efed300-21ca-430f-80c6-d211c7a2535d">
 </p>
 
 ## DS4 LED panel
