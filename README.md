@@ -46,8 +46,10 @@ To launch the script in the background and make it work, some services need to b
       <br />
     
           sudo systemctl patan-ds4_default.service
+     
+      <br />
       
-  2) Battery LED monitor mode:
+  3) Battery LED monitor mode:
 
           sudo vim patan-ds4_battery.service
             
@@ -67,8 +69,11 @@ To launch the script in the background and make it work, some services need to b
         <br />
         
           sudo systemctl patan-ds4_battery.service
+
+        <br />
+         
   
-  3) Applications LED monitor mode:
+  5) Applications LED monitor mode:
 
           sudo vim patan-ds4_launch.service
             
@@ -88,6 +93,8 @@ To launch the script in the background and make it work, some services need to b
         <br />
         
           sudo systemctl patan-ds4_launch.service
+  
+        <br />
   
 ## Usage
 To launch the GUI you can run the script with -g argument. <br />
