@@ -269,8 +269,6 @@ GUI()
     then
         COLOR="$(zenity --color-selection --show-palette)"
         RGB="$(echo "$COLOR" | sed -e 's/rgb*(\(.*\))/\1/')"
-        echo "$COLOR"
-        echo "$RGB"
         echo "$RGB" > "/home/YOURUSERNAME/code_data/Bash/ds4_default.txt"
 
     elif [ "$OPT" = "Enable/disable automatic battery LED" ]
